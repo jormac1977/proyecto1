@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Consultas</title>
+</head>
+<body>
+    <header>
+        <img src="../assets/imagenes/logo paul cuer.png" alt="logo">
+    </header>
+    <body>
+        <form action="#" method="post" target="_blank">
+            <fieldset>
+                <legend>
+                    <h2>Formulario de Consultas</h2>
+                </legend>
+                <p>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="lastname">Apellido</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </p>
+                <p>
+                    <label for="edad">Edad actual</label>
+                    <input type="number" name="edad" id="edad" required>
+                </p>
+                <p>
+                    <label for="sexo">Sexo</label>
+                    <input type="radio" name="sexo" id="fem"> Femenino
+                    <input type="radio" name="sexo" id="masc"> Masculino
+                    <input type="radio" name="sexo" id="nc"> Prefiero no contestar
+                </p>
+                <p>
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" name="email" id="email" required placeholder="nombre@gmail.com">
+                </p>
+                <p>
+                    <label for="phone">Telefono Celular</label>
+                    <input type="tel" name="phone" id="phone">
+                </p>
+                <p>
+                    <legend>Ingrese su consulta</legend>
+                    <label for="consulta" >Consulta: </label>
+                    <textarea name="consulta" id="consulta" maxlength="200" cols="40" rows="10" placeholder="Maximo 200 caracteres"></textarea>             
+                </p>
+                <p>
+                    <input type="submit" value="Enviar Consulta">
+                    <input type="reset" value="Borrar Consulta"> 
+                </p>
+
+            </fieldset>
+        </form>
+    </body>
+    
+
+</body>
+</html>

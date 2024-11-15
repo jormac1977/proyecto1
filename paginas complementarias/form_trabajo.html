@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario busqueda laboral</title>
+
+</head>
+<body>
+    <header>
+        <img src="../assets/imagenes/logo paul cuer.png" alt="logo">
+    </header>
+    <body>
+        <form action="#" method="post" target="_blank">
+            <h2>Formulario de Busqueda Laboral</h2>
+            <fieldset>
+                <legend> DATOS PERSONALES </legend>
+                <p>
+                    <label for="name">Nombres</label>
+                    <input type="text" name="nombre" id="name" required>
+                </p>
+                <p>
+                    <label for="lastname">Apellido</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </p>
+                <p>
+                    <label for="nacimiento">Fecha de Nacimiento</label>
+                    <input type="date" name="nacimiento" id="nacimiento">
+                </p>
+                <p>
+                    <p>Dirección</p>
+                    <label for="calle">Calle</label>
+                    <input type="text" name="calle" id="calle" size="30">
+                    <label for="numero">Numero</label>
+                    <input type="text" name="numero" id="numero" size="6">
+                    <label for="piso">piso</label>
+                    <input type="text" name="piso" id="piso" size="3">
+                </p>
+                <p>
+                    <label for="email">Correo Electronico</label>
+                    <input type="mail" name="mail" id="mail" placeholder="nombre@gmail.com" required>
+                </p>
+                <p>
+                    <label for="tel">Telefono Celular</label>
+                    <input type="tel" name="tel" id="tel">
+                </p>  
+            </fieldset>
+            <fieldset>
+                <legend>DATOS PARA LA POSTULACION</legend>
+                <p>
+                    <label for="estudios">Nivel de estudio alcanzado</label>
+                    <input type="radio" name="estudios" id="primario"> Primario completo
+                    <input type="radio" name="estudios" id="secundario"> Secundario completo
+                    <input type="radio" name="estudios" id="universitario"> Universitario
+                    <input type="radio" name="estudios" id="posgrado"> Posgrado
+                </p>
+                <p>
+                    <label for="conocimiento">Conocimientos en programación</label>
+                    <input type="checkbox" name="conocimiento" value="html" id="HTML"> HTML
+                    <input type="checkbox" name="conocimiento" value="python" id="python"> PYTHON 
+                    <input type="checkbox" name="conocimiento" value="css" id="css"> CSS
+                    <input type="checkbox" name="conocimiento" value="js" id="js"> JS
+                    <textarea name="conocimiento" id="conocimiento" placeholder="otros conocimientos: "></textarea>               
+                </p>
+                <p>
+                    <label for="idioma">Idiomas</label>
+                    <input type="checkbox" name="idioma" value="ingles" id="ingles"> INGLES 
+                    <input type="checkbox" name="idioma" value="italiano" id="italiano"> ITALIANO 
+                    <input type="checkbox" name="idioma" value="portugues" id="portugues"> PORTUGUES 
+                    <textarea name="idioma" id="idioma" placeholder="Otros idiomas:"></textarea>
+                </p>
+                <p>
+                    <label for="ocupación">Estado laboral actual</label>
+                    <select name="ocupación" id="ocupacipon" > 
+                        <option value="0"> -- </option>
+                        <option value="desempleado">Desempleado</option>
+                        <option value="estudiante">Esudiante</option>
+                        <option value="trabajando">Trabajando actualmente</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="postulación">Area a la que se postula</label>
+                    <select name="postulación" id="postulacion">
+                        <option value="0"> -- </option>
+                        <option value="limpieza">Limpieza</option>
+                        <option value="cadete">Cadete</option>
+                        <option value="administrativo">Administrativo</option>
+                        <option value="programador">Programador</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="cv">Curriculum Vitae</label>
+                    <input type="file" name="cv" id="cv">
+                </p>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Borrar formulario">
+            </p>
+        </form>
+        
+    </body>
+    
+</body>
+</html>
